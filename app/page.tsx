@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { pirulen } from '@/ui/fonts';
 import Image from 'next/image';
-import hero from './hero.jpg';
+import hero from './hero.webp';
 
 type FormData = {
   name: string;
@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
     <div className='md:m-[2rem] rounded-[0.5rem] bg-white flex md:flex-row flex-col-reverse shadow-md self-center overflow-hidden relative'>
-      <div className='p-[1rem] py-[2rem] pb-[5rem] flex flex-col justify-between gap-8'>
+      <div className='p-[1rem] py-[2rem] pb-[5rem] pl-[2rem] flex flex-col justify-between gap-8'>
         <div className='flex items-center gap-2'>
           <Image 
             src='/c.png'
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
 
         <div className='flex flex-col gap-4'>
-          <span className='bg-[#e2e8f0] px-[0.7rem] py-[0.1rem] text-xs font-bold rounded w-fit'>Coming soon</span>
+          <span className='bg-[#ebebeb] px-[0.7rem] py-[0.1rem] text-[0.65rem] font-medium rounded w-fit flex items-center justify-center'>Coming soon</span>
 
           <div className='flex flex-col gap-4'>
             <h2 className='text-3xl font-bold'>The Game-Changer for Car Dealers is Coming!</h2>
